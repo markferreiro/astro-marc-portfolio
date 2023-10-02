@@ -4,11 +4,9 @@ const currentPath = pathname.slice(1);
 console.log(currentPath);
 ---
 
-<p>{pathname}</p>
-<p>{currentPath}</p>
 <a
   class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "" ? "text-inactive" : ""
+    currentPath !== "" && currentPath !== "/" ? "text-inactive" : ""
   }`}
   href="/"
 >
@@ -16,7 +14,7 @@ console.log(currentPath);
 >
 <a
   class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "about" ? "text-inactive" : ""
+    currentPath !== "about" && currentPath !== "about/" ? "text-inactive" : ""
   }`}
   href="/about"
 >
@@ -24,7 +22,9 @@ console.log(currentPath);
 >
 <a
   class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "projects" ? "text-inactive" : ""
+    currentPath !== "projects" && currentPath !== "projects/"
+      ? "text-inactive"
+      : ""
   }`}
   href="/projects"
 >
