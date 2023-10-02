@@ -1,0 +1,24 @@
+---
+import Logo from "./svgs/Logo.astro";
+import NavBar from "./NavBar.astro";
+import SocialBar from "./SocialBar.astro";
+import LanguageBar from "./LanguageBar.astro";
+---
+
+<div
+  class="flex flex-row z-10 w-full max-w-5xl items-center justify-between font-mono text-sm mb-10"
+>
+  <a href="/">
+    <Logo />
+  </a>
+  <div class="flex gap-4 items-center">
+    <NavBar />
+    <div class="w-0.5 h-3 bg-black"></div>
+    <div class="flex flex-row gap-6">
+      <SocialBar />
+    </div>
+    <div class="flex flex-row gap-6">
+      <LanguageBar />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<a
+  class:list={[
+    { "text-inactive": currentPath !== "" },
+    "font-lalezar text-navbar h-5",
+  ]}
+  href="/"
+>
+  Home</a
+>
+<a
+  class:list={[
+    { "text-inactive": currentPath !== "about" },
+    "font-lalezar text-navbar h-5",
+  ]}
+  href="/about"
+>
+  About me</a
+>
+<a
+  class:list={[
+    { "text-inactive": currentPath !== "projects" },
+    "font-lalezar text-navbar h-5",
+  ]}
+  href="/projects"
+>
+  Projects</a
+>
