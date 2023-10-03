@@ -6,9 +6,11 @@ const { title } = Astro.props;
 
 <Main title={title}>
   <main
-    class="px-5 flex min-h-screen flex-col items-center justify-start pt-10 bg-gradient-to-br from-gradient2From to-gradient2To"
+    class="px-5 flex flex-col items-center justify-start bg-gradient-to-br from-gradient2From to-gradient2To"
   >
-    <Header />
+    <div class="fixed w-screen flex justify-center items-center py-7 px-32">
+      <Header />
+    </div>
     <slot />
   </main>
 </Main>
