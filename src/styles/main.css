@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-timeline: --page-scroll block;
+}
+
+body {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
 @layer base {
   @font-face {
     font-family: 'Lalezar';

@@ -4,11 +4,29 @@ import Header from "../components/Header.astro";
 const { title } = Astro.props;
 ---
 
+<style>
+  .header {
+    background-color: transparent;
+    animation: adjust-progressbar auto linear;
+    animation-range: 50px 180px;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll();
+  }
+
+  @keyframes adjust-progressbar {
+    to {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: white;
+    }
+  }
+</style>
+
 <Main title={title}>
-  <main
-    class="px-5 flex flex-col items-center justify-start bg-gradient-to-br from-gradient2From to-gradient2To"
-  >
-    <div class="fixed w-screen flex justify-center items-center py-7 px-32">
+  <main class="px-5 flex flex-col items-center justify-start">
+    <div
+      class="header z-10 fixed w-screen flex justify-center items-center py-7 px-32"
+    >
       <Header />
     </div>
     <slot />

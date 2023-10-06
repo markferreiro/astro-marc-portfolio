@@ -4,27 +4,31 @@ const currentPath = pathname.slice(1);
 ---
 
 <a
-  class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "" && currentPath !== "/" ? "text-inactive" : ""
-  }`}
+  class:list={[
+    { "text-slate-400": currentPath !== "" && currentPath !== "/" },
+    "font-lalezar text-navbar h-5",
+  ]}
   href="/"
 >
   Home</a
 >
 <a
-  class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "about" && currentPath !== "about/" ? "text-inactive" : ""
-  }`}
+  class:list={[
+    { "text-slate-400": currentPath !== "about" && currentPath !== "about/" },
+    "font-lalezar text-navbar h-5",
+  ]}
   href="/about"
 >
   About me</a
 >
 <a
-  class={`font-lalezar text-navbar h-5 ${
-    currentPath !== "projects" && currentPath !== "projects/"
-      ? "text-inactive"
-      : ""
-  }`}
+  class:list={[
+    {
+      "text-slate-400":
+        currentPath !== "projects" && currentPath !== "projects/",
+    },
+    "font-lalezar text-navbar h-5",
+  ]}
   href="/projects"
 >
   Projects</a

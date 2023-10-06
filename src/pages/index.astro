@@ -1,12 +1,17 @@
 ---
 import HeadedPage from "../layouts/HeadedPage.astro";
 import Section from "../components/Section.astro";
+import Presentation from "../components/sections/Presentation.astro";
+import Projects from "../components/sections/Projects.astro";
 
 const title = "Marc Ferreiro Portfolio";
 ---
 
 <HeadedPage title={title}>
-  <Section>
-    <h1>Home</h1>
+  <Section class="bg-gradient-to-b from-gradient2From to-gradient2To">
+    <Presentation />
+  </Section>
+  <Section class="bg-slate-900">
+    <Projects />
   </Section>
 </HeadedPage>

@@ -7,6 +7,12 @@ module.exports = {
 		},
 		fontSize: {
 			navbar: ["20px", "24px"],
+			xxl: [
+			  "5rem",
+			  {
+				lineHeight: "5rem",
+			  },
+			],
 			xl: [
 			  "4rem",
 			  {
@@ -46,7 +52,7 @@ module.exports = {
 				gradient1To: "#5C42FF",
 				gradient2From: "#EDEAEA",
 				gradient2To: "#D8FDFF",
-			}
+			},
 		},
 	},
 	plugins: [],

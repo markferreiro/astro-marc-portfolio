@@ -1,0 +1,105 @@
+---
+
+---
+
+<style>
+  .cursor {
+    color: #000;
+  }
+</style>
+
+<div class="flex flex-1 flex-col">
+  <div class="flex flex-col flex-1 justify-center -mt-40">
+    <h1 class="text-xxl text-slate-400 font-lalezar">
+      Hi, I'm <span class="text-slate-900">Marc Ferreiro</span><br />
+       A <span
+        id="typewriter"
+        class="text-transparent bg-clip-text bg-gradient-to-r from-gradient1From to-gradient1To"
+      >
+        Front End Developer
+      </span>
+    </h1>
+  </div>
+  <ul class="p flex flex-row gap-20 justify-center">
+    <li class="font-lalezar flex flex-col">
+      <span class="text-slate-400">Years of experience</span><span
+        class="text-md text-slate-700"
+      >
+        +10
+      </span>
+    </li>
+    <li class="font-lalezar flex flex-col">
+      <span class="text-slate-400">Completed Projects</span><span
+        class="text-md text-slate-800"
+      >
+        +20
+      </span>
+    </li>
+    <li class="font-lalezar flex flex-col">
+      <span class="text-slate-400">Main Framework</span><span
+        class="text-md text-slate-800"
+      >
+        React
+      </span>
+    </li>
+    <li class="font-lalezar flex flex-col">
+      <span class="text-slate-400">Main technology</span><span
+        class="text-md text-slate-800"
+      >
+        JavaScript
+      </span>
+    </li>
+  </ul>
+  <div
+    class="absolute bottom-6 left-1/2 transform -translate-x-1/2 rounded-full border-2 border-slate-900 animate-bounce"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-arrow-big-down"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M15 4v8h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-8a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1z"
+      ></path>
+    </svg>
+  </div>
+</div>
+
+<script>
+  // @ts-ignore
+  import Typewriter from "typewriter-effect/dist/core";
+
+  var typewriterElement = document.getElementById("typewriter");
+  var typewriter = new Typewriter(typewriterElement, {
+    loop: true,
+    cursor: "_",
+    cursorClassName: "cursor",
+    delay: 75,
+  });
+
+  typewriter
+    .typeString("Front End Developer")
+    .pauseFor(2500)
+    .deleteChars(9)
+    .typeString("Architect")
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString("JavaScript based")
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString("React based")
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString("CSS Lover")
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+</script>

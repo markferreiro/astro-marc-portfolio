@@ -1,7 +1,12 @@
 ---
-
+const { class: componentClasses } = Astro.props;
 ---
 
-<section class="h-screen w-screen p-32">
+<section
+  class:list={[
+    "h-screen w-screen p-32 flex flex-grow-0 flex-shrink-0",
+    componentClasses,
+  ]}
+>
   <slot />
 </section>
