@@ -19,16 +19,22 @@ module.exports = {
 				lineHeight: "4rem",
 			  },
 			],
+			lg: [
+			  "3.5rem",
+			  {
+				lineHeight: "3.5rem",
+			  },
+			],
 			md: [
 			  "3rem",
 			  {
 				lineHeight: "3rem",
 			  },
 			],
-			s: [
-			  "2rem",
+			sm: [
+			  "2.5rem",
 			  {
-				lineHeight: "2rem",
+				lineHeight: "2.5rem",
 			  },
 			],
 			xs: [
